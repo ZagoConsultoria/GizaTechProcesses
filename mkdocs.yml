@@ -1,0 +1,104 @@
+site_name: GIZA
+repo_name: "ZS"
+repo_url: "https://github.com/HeitorQueAnd/ZS"
+
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+  language: pt
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch
+        name: Dark mode
+      primary: green
+      accent: green
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Light mode
+      primary: green
+      accent: green
+
+# --- AQUI ESTÁ A MÁGICA PARA O NOVO TEMPLATE ---
+# Habilita suporte a Tags e Busca melhorada
+plugins:
+  - search
+  - tags:
+      tags_file: tags.md
+
+markdown_extensions:
+  - attr_list
+  - tables
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  
+  # AQUI ESTÁ A CORREÇÃO DOS CHECKBOXES
+  - pymdownx.tasklist:
+      custom_checkbox: true
+      clickable_checkbox: true   # <--- ISSO PERMITE O CLIQUE
+
+  # AQUI ESTÁ A CORREÇÃO DO WARNING DE EMOJI
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+# Mantenha isso APENAS se você criar o arquivo (ver passo 2 abaixo)
+extra_css:
+  - custom.css
+
+nav:
+  - Início: index.md
+  - Índice de Tags: tags.md
+  - Estratégia:
+      - Ciclos de Inovação: 01-estrategia/est-001-ciclos-inovacao.md
+      - Revisão de Portfólio: 01-estrategia/est-002-revisao-portfolio.md
+      - OKRs Trimestrais: 01-estrategia/est-003-okrs-trimestrais.md
+      - Análise de ROI: 01-estrategia/est-004-analise-roi.md
+      - Custos de TI: 01-estrategia/est-006-custos-ti.md
+  - Produto:
+      - Discovery de Usuários: 02-produto/prod-001-discovery-usuarios.md
+      - Validação de Usuário: 02-produto/prod-002-validacao-usuario.md
+      - Radar de Tendências: 02-produto/prod-003-radar-tendencias.md
+      - Backlog Semanal: 02-produto/prod-004-backlog-semanal.md
+      - Lançamento de Solução: 02-produto/prod-005-lancamento-solucao.md
+      - Indicadores de Lançamento: 02-produto/prod-006-indicadores-lancamento.md
+  - Engenharia:
+      - Auditoria de Código: 03-engenharia/eng-001-auditoria-codigo.md
+      - Revisão de Arquitetura: 03-engenharia/eng-002-revisao-arquitetura.md
+      - Melhorias Giza: 03-engenharia/eng-003-melhorias-giza.md
+      - Anomalias Semanais: 03-engenharia/eng-004-anomalias-semanais.md
+      - Gestão de Bugs: 03-engenharia/eng-005-gestao-bugs.md
+      - Monitoramento de Instabilidade: 03-engenharia/eng-006-monitoramento-instabilidade.md
+  - Infraestrutura:
+      - Inventário de Ativos: 04-infra/infra-001-inventario-ativos.md
+      - Segurança de Rede: 04-infra/infra-002-seguranca-rede.md
+      - Gestão de Senhas: 04-infra/infra-003-gestao-senhas.md
+      - Rack Servidor: 04-infra/infra-004-rack-servidor.md
+      - Onboarding de Acessos: 04-infra/infra-005-onboarding-acessos.md
+      - Offboarding de Acessos: 04-infra/infra-006-offboarding-acessos.md
+      - Manutenção de Hardware: 04-infra/infra-007-manutencao-hardware.md
+  - Ágil:
+      - Dailies: 05-agil/agil-001-dailies.md
+      - Review de Resultados: 05-agil/agil-002-review-resultados.md
+      - Poker Planning: 05-agil/agil-003-poker-planning.md
+      - Atualização de Quadro: 05-agil/agil-004-atualizacao-quadro.md
+      - Review Semanal: 05-agil/agil-005-review-semanal.md
+      - Suporte a Tickets: 05-agil/agil-006-suporte-tickets.md
