@@ -5,9 +5,9 @@
 <p align="center"><b>Processos operacionais da área de tecnologia: estratégia, produto, engenharia e infraestrutura.</b></p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/MkDocs%20Material-0f2d22?style=flat-square" alt="MkDocs Material">
-  <img src="https://img.shields.io/badge/Processos-0f2d22?style=flat-square" alt="Processos">
-  <img src="https://img.shields.io/badge/Runbooks-0f2d22?style=flat-square" alt="Runbooks">
+  <img src="https://img.shields.io/badge/MkDocs%20Material-102a43?style=flat-square" alt="MkDocs Material">
+  <img src="https://img.shields.io/badge/Processos-102a43?style=flat-square" alt="Processos">
+  <img src="https://img.shields.io/badge/Runbooks-102a43?style=flat-square" alt="Runbooks">
 </p>
 
 **Sumário:** [Visão geral](#visão-geral) · [Estrutura](#estrutura) · [Começando](#começando) · [Deploy e operação](#deploy-e-operação) · [Contribuindo](#contribuindo) · [Segurança](#segurança) · [Mantenedores](#mantenedores)
