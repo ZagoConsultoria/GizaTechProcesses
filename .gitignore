@@ -1,0 +1,19 @@
+# --- Segurança e higiene (05/11/2026): impede subir segredos, logs, chaves e lixo ---
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.log
+logs/
+.idea/
+.DS_Store
+node_modules/
+*.dump
+*.bak
+*.sql.gz
